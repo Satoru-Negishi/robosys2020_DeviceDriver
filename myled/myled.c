@@ -50,7 +50,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 				gpio_base[10] = 1 << LED_gpio[n];
 		}
 
-		for(n = 0; n < 5; n++) {
+		for(n = 0; n < 2; n++) {
 			j = 0, k=0;
 			gpio_base[7] = 1 << led_gpio[j];
 			gpio_base[7] = 1 << LED_gpio[k];
