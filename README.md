@@ -24,5 +24,5 @@
 
 ## 回路
 LEDを光らせるための電子回路は以下の写真のように作成しました。
-- 回路写真URL
-LEDはRabery PIのGPIO17,GPIO23,GPIO25,GPIO26,GPIO27とそれぞれGNDに接続しています。
+- 回路写真URL  
+LEDはRabery PIのGPIO[17,23,25,26,27]とそれぞれGNDに接続しています。
