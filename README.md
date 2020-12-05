@@ -11,7 +11,7 @@
 
 ## 概要
 大学の講義の課題として作成したデバイスドライバで、下記の動作を行います。
-- 数字の0~3の入力に応じたLEDの点灯・消灯
+- 数字の0~4の入力に応じたLEDの点灯・消灯
 - 交通信号機を模したパターンでのLEDの点灯
 
 ## 用意・構築環境
@@ -61,7 +61,7 @@ $ echo 2 > /dev/myled0
 ```
 $ echo 3 > /dev/myled0
 ```
-'3'を入力するとGPIO[17, 27]に接続されたLEDが点灯します
+'3'を入力するとGPIO[17, 27]に接続されたLEDが点灯します。
 LED点灯時は以下のようになります。
 - 入力3写真
 
@@ -70,6 +70,8 @@ LED点灯時は以下のようになります。
 $ echo 4 > /dev/myled0
 ```
 '4'を入力すると交通信号機を模したパターンでLEDを点灯・消灯させます。  
-動作の様子は以下のURLリンクから確認できます。
+動作の様子は以下のURLリンクから確認できます。  
+- youtubeURL
 
 ## ライセンス
+[GNU GENERAL PUBLIC LICENSE](https://github.com/Satoru-Negishi/robosys_devicedriver_2020-12/blob/main/COPYING)
