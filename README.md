@@ -14,7 +14,7 @@
 - 交通信号機を模したパターンでのLEDの点灯
 
 ## 用意・構築環境
-- Rasbery Pi 4
+- Raspberry Pi 4
 - ブレッドボード
 - LED
 - 抵抗 220Ω
@@ -24,7 +24,7 @@
 LEDを光らせるための電子回路は以下の写真のように作成しました。
 ![回路全体](https://user-images.githubusercontent.com/73330874/101272214-783cb580-37cd-11eb-8f75-e7550f5e85d6.jpg) 
 
-LEDはRabery PIのGPIO[17,23,25,26,27]とそれぞれGNDに接続しています。  
+LEDはRaspberry PiのGPIO[17,23,25,26,27]とそれぞれGNDに接続しています。  
 GPIOはブレッドボード左側のLED[青:23,黄:25,赤:26]、右側のLED[青:27,赤:17]に対応しています。
 
 ## 実行コマンド
