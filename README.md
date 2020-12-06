@@ -20,14 +20,13 @@
 - LED
 - 抵抗 220Ω
 - ジャンパー線
-- WSL(Ubuntu 18.04 LTS)
 
 ## 回路
 LEDを光らせるための電子回路は以下の写真のように作成しました。
 ![回路全体](https://user-images.githubusercontent.com/73330874/101272214-783cb580-37cd-11eb-8f75-e7550f5e85d6.jpg) 
 
 LEDはRabery PIのGPIO[17,23,25,26,27]とそれぞれGNDに接続しています。  
-GPIOはブレッドボード左側のLED[青:23,黄:25,赤:26]、右側のLED[青:17,赤:27]に対応しています。
+GPIOはブレッドボード左側のLED[青:23,黄:25,赤:26]、右側のLED[青:27,赤:17]に対応しています。
 
 ## 実行
 実際に動作させるために、このリポジトリをクローンする。
@@ -72,8 +71,7 @@ LED点灯時は以下のようになります。
 $ echo 4 > /dev/myled0
 ```
 '4'を入力すると交通信号機を模したパターンでLEDを点灯・消灯させます。  
-動作の様子は以下のURLリンクから確認できます。  
-- youtubeURL
+動作の様子は[こちら](https://youtu.be/paAuUeA_dmM)で確認できます。  
 
 ## ライセンス
 [GNU GENERAL PUBLIC LICENSE](https://github.com/Satoru-Negishi/robosys_devicedriver_2020-12/blob/main/COPYING)
