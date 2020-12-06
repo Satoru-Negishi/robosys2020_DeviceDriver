@@ -1,3 +1,6 @@
+/*
+     Copyright (C) 2020  Ryuichi Ueda and Satoru Negishi. All right reserved.
+*/
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
@@ -9,7 +12,7 @@
 MODULE_AUTHOR("Ryuuichi Ueda and Satoru Negishi");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
-MODULE_VERSION("0.0.1");
+MODULE_VERSION("0.0.3");
 
 static dev_t dev;
 static struct cdev cdv;
