@@ -32,11 +32,16 @@ GPIOはブレッドボード左側のLED[青:23,黄:25,赤:26]、右側のLED[�
 ```
 $ git clone https://github.com/Satoru-Negishi/robosys_devicedriver_2020-12.git
 ```
-クローンしたファイル内で、以下のコードを実行し数字を入力できる状態にする。
+クローンしたファイル内で、以下を実行し数字を入力できる状態にする。
 ```
 $ make
 $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
+```
+上記のコマンドの変更を元に戻す際は以下のコマンドを入力してください。
+```
+$ sudo rmmod myled
+$ make clean
 ```
 
 ### LEDの点灯・消灯
